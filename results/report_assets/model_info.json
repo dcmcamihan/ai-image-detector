@@ -1,0 +1,6 @@
+{
+  "model": "swin_tiny_patch4_window7_224",
+  "model_path": "models/regularized_training/model_swin_t_regularized.pth",
+  "checksum": "3a9a2f9b6ec500fb09e048407289f0a32904ce6a5a007b17c8085f52b9b4aae7",
+  "checksum_short": "3a9a2f9b6ec5"
+}

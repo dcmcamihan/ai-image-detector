@@ -1,0 +1,10 @@
+generator,train_ai,train_real,val_ai,val_real
+adm,2000,1999,500,500
+biggan,2000,2000,500,500
+general,23998,23993,6000,5997
+glide,2000,2000,500,500
+hard_cases_web,1200,1200,300,300
+midjourney,2000,2000,500,500
+sdv5,2000,2000,500,500
+vqdm,2000,2000,500,500
+wukong,2000,2000,500,500

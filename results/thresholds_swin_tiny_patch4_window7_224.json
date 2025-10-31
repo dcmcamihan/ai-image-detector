@@ -1,0 +1,104 @@
+{
+  "global": {
+    "best_acc": {
+      "acc": 0.8142572842782059,
+      "threshold": 0.54
+    },
+    "best_f1": {
+      "f1": 0.8203260006538695,
+      "threshold": 0.44
+    }
+  },
+  "per_generator": {
+    "sdv5": {
+      "best_acc": {
+        "acc": 0.923,
+        "threshold": 0.35
+      },
+      "best_f1": {
+        "f1": 0.9248780487804878,
+        "threshold": 0.35
+      }
+    },
+    "glide": {
+      "best_acc": {
+        "acc": 0.903,
+        "threshold": 0.4
+      },
+      "best_f1": {
+        "f1": 0.9050387596899225,
+        "threshold": 0.38
+      }
+    },
+    "general": {
+      "best_acc": {
+        "acc": 0.8022839043094107,
+        "threshold": 0.63
+      },
+      "best_f1": {
+        "f1": 0.8081472777124951,
+        "threshold": 0.54
+      }
+    },
+    "vqdm": {
+      "best_acc": {
+        "acc": 0.817,
+        "threshold": 0.4
+      },
+      "best_f1": {
+        "f1": 0.8371278458844134,
+        "threshold": 0.31
+      }
+    },
+    "midjourney": {
+      "best_acc": {
+        "acc": 0.897,
+        "threshold": 0.42
+      },
+      "best_f1": {
+        "f1": 0.8995215311004785,
+        "threshold": 0.37
+      }
+    },
+    "adm": {
+      "best_acc": {
+        "acc": 0.883,
+        "threshold": 0.3
+      },
+      "best_f1": {
+        "f1": 0.8929551692589204,
+        "threshold": 0.3
+      }
+    },
+    "biggan": {
+      "best_acc": {
+        "acc": 0.881,
+        "threshold": 0.37
+      },
+      "best_f1": {
+        "f1": 0.8867745004757374,
+        "threshold": 0.37
+      }
+    },
+    "hard_cases_web": {
+      "best_acc": {
+        "acc": 0.6166666666666667,
+        "threshold": 0.51
+      },
+      "best_f1": {
+        "f1": 0.6801075268817204,
+        "threshold": 0.29
+      }
+    },
+    "wukong": {
+      "best_acc": {
+        "acc": 0.948,
+        "threshold": 0.34
+      },
+      "best_f1": {
+        "f1": 0.94831013916501,
+        "threshold": 0.34
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+hash,paths
+0000000000ffffff,data/standardized_jpg/sdv5/train/nature/000387.jpg|data/standardized_jpg/sdv5/train/ai/001119.jpg
+00000018ffffffff,data/standardized_jpg/sdv5/train/nature/001950.jpg|data/standardized_jpg/sdv5/train/nature/000574.jpg
+ffffffff00000000,data/standardized_jpg/sdv5/train/nature/001370.jpg|data/standardized_jpg/sdv5/train/nature/001411.jpg|data/standardized_jpg/sdv5/train/nature/001456.jpg|data/standardized_jpg/sdv5/train/nature/001293.jpg|data/standardized_jpg/sdv5/val/nature/000481.jpg
+ffff000000000000,data/standardized_jpg/sdv5/train/nature/001163.jpg|data/standardized_jpg/sdv5/train/nature/000719.jpg
+ffffff0000000000,data/standardized_jpg/sdv5/train/nature/001638.jpg|data/standardized_jpg/sdv5/train/nature/000565.jpg|data/standardized_jpg/sdv5/val/nature/000441.jpg
+ffffffffff000000,data/standardized_jpg/sdv5/train/nature/001954.jpg|data/standardized_jpg/sdv5/train/nature/001157.jpg|data/standardized_jpg/sdv5/train/ai/001020.jpg
+0000001effffffff,data/standardized_jpg/sdv5/train/nature/001967.jpg|data/standardized_jpg/sdv5/train/nature/000349.jpg
+8181818181818181,data/standardized_jpg/sdv5/train/nature/001553.jpg|data/standardized_jpg/sdv5/train/nature/001108.jpg|data/standardized_jpg/sdv5/train/ai/000918.jpg
+ffffffffc0000000,data/standardized_jpg/sdv5/train/nature/001657.jpg|data/standardized_jpg/sdv5/train/ai/000882.jpg|data/standardized_jpg/sdv5/val/nature/000418.jpg

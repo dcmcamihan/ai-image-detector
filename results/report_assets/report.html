@@ -1,0 +1,192 @@
+<html><head><meta charset='utf-8'><title>Model Report</title>
+<style>body{font-family:Inter,system-ui, -apple-system, 'Segoe UI', Roboto, Arial; padding:28px; background:#fafafa; color:#222} .card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:18px} h1{color:#264653} table{border-collapse:collapse;width:100%} th,td{padding:8px;border-bottom:1px solid #eee;text-align:left} .center{display:flex;gap:16px;flex-wrap:wrap}</style>
+</head><body>
+<h1>AI Image Detector — Detailed Report</h1>
+<div class='card'><h2>Summary Metrics</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>accuracy</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1</th>
+      <th>roc_auc</th>
+    </tr>
+    <tr>
+      <th>model</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>resnet18</th>
+      <td>0.8876</td>
+      <td>0.8562</td>
+      <td>0.9315</td>
+      <td>0.8923</td>
+      <td>0.9573</td>
+    </tr>
+    <tr>
+      <th>swin_tiny_patch4_window7_224</th>
+      <td>0.7281</td>
+      <td>0.6592</td>
+      <td>0.9443</td>
+      <td>0.7764</td>
+      <td>0.8775</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class='card'><h2>Generator Summary</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>generator</th>
+      <th>train_ai</th>
+      <th>train_real</th>
+      <th>val_ai</th>
+      <th>val_real</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>adm</td>
+      <td>2000</td>
+      <td>1999</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>biggan</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>general</td>
+      <td>23998</td>
+      <td>23993</td>
+      <td>6000</td>
+      <td>5997</td>
+    </tr>
+    <tr>
+      <td>glide</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>hard_cases_web</td>
+      <td>1200</td>
+      <td>1200</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>midjourney</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>sdv5</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>vqdm</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>wukong</td>
+      <td>2000</td>
+      <td>2000</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class='card'><h2>Assets</h2><div class='center'>
+<div style='width:360px'><h4>adm_ai_grid.png</h4><img src='adm_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>adm_real_grid.png</h4><img src='adm_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>biggan_ai_grid.png</h4><img src='biggan_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>biggan_real_grid.png</h4><img src='biggan_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>chosen_threshold.png</h4><img src='chosen_threshold.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18.png</h4><img src='confusion_matrix_resnet18.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_adm.png</h4><img src='confusion_matrix_resnet18_adm.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_adm_raw.png</h4><img src='confusion_matrix_resnet18_adm_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_biggan.png</h4><img src='confusion_matrix_resnet18_biggan.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_biggan_raw.png</h4><img src='confusion_matrix_resnet18_biggan_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_general.png</h4><img src='confusion_matrix_resnet18_general.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_general_raw.png</h4><img src='confusion_matrix_resnet18_general_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_glide.png</h4><img src='confusion_matrix_resnet18_glide.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_glide_raw.png</h4><img src='confusion_matrix_resnet18_glide_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_midjourney.png</h4><img src='confusion_matrix_resnet18_midjourney.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_midjourney_raw.png</h4><img src='confusion_matrix_resnet18_midjourney_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_raw.png</h4><img src='confusion_matrix_resnet18_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_sdv5.png</h4><img src='confusion_matrix_resnet18_sdv5.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_sdv5_raw.png</h4><img src='confusion_matrix_resnet18_sdv5_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_vqdm.png</h4><img src='confusion_matrix_resnet18_vqdm.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_vqdm_raw.png</h4><img src='confusion_matrix_resnet18_vqdm_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_wukong.png</h4><img src='confusion_matrix_resnet18_wukong.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_resnet18_wukong_raw.png</h4><img src='confusion_matrix_resnet18_wukong_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_adm.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_adm.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_adm_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_adm_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_biggan.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_biggan.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_biggan_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_biggan_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_general.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_general.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_general_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_general_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_glide.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_glide.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_glide_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_glide_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_hard_cases_web.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_hard_cases_web.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_hard_cases_web_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_hard_cases_web_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_midjourney.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_midjourney.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_midjourney_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_midjourney_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_sdv5.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_sdv5.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_sdv5_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_sdv5_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_vqdm.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_vqdm.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_vqdm_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_vqdm_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_wukong.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_wukong.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>confusion_matrix_swin_tiny_patch4_window7_224_wukong_raw.png</h4><img src='confusion_matrix_swin_tiny_patch4_window7_224_wukong_raw.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>general_ai_grid.png</h4><img src='general_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>general_real_grid.png</h4><img src='general_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>glide_ai_grid.png</h4><img src='glide_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>glide_real_grid.png</h4><img src='glide_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>hard_cases_web_ai_grid.png</h4><img src='hard_cases_web_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>hard_cases_web_real_grid.png</h4><img src='hard_cases_web_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>metrics_comparison_bar.png</h4><img src='metrics_comparison_bar.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>metrics_heatmap_models_metrics.png</h4><img src='metrics_heatmap_models_metrics.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>midjourney_ai_grid.png</h4><img src='midjourney_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>midjourney_real_grid.png</h4><img src='midjourney_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>sample_ai_grid.png</h4><img src='sample_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>sample_global_ai_grid.png</h4><img src='sample_global_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>sample_global_real_grid.png</h4><img src='sample_global_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>sample_real_grid.png</h4><img src='sample_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>sdv5_ai_grid.png</h4><img src='sdv5_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>sdv5_real_grid.png</h4><img src='sdv5_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>temperature_value.png</h4><img src='temperature_value.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>train_counts_by_generator_stacked.png</h4><img src='train_counts_by_generator_stacked.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>train_distribution_by_generator.png</h4><img src='train_distribution_by_generator.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>train_global_pie.png</h4><img src='train_global_pie.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>vqdm_ai_grid.png</h4><img src='vqdm_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>vqdm_real_grid.png</h4><img src='vqdm_real_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>wukong_ai_grid.png</h4><img src='wukong_ai_grid.png' style='width:100%;border-radius:6px' /></div>
+<div style='width:360px'><h4>wukong_real_grid.png</h4><img src='wukong_real_grid.png' style='width:100%;border-radius:6px' /></div>
+</div></div>
+</body></html>
