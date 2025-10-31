@@ -1,0 +1,19 @@
+model_name: "resnet18"
+pretrained: true
+freeze_backbone: false
+dropout: 0.4
+
+# Data
+data_root: "data/standardized_jpg"
+image_size: 224
+batch_size: 32
+
+# Training
+epochs: 10
+learning_rate: 0.0003
+weight_decay: 0.0005
+early_stopping_patience: 3
+seed: 42
+
+# Output
+save_dir: "models/balanced_training"

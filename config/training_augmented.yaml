@@ -1,0 +1,37 @@
+model_name: "swin_tiny_patch4_window7_224"
+pretrained: true
+freeze_backbone: false
+dropout: 0.5
+
+# Data
+data_root: "data/standardized_jpg"
+image_size: 224
+batch_size: 32
+
+# Quality balancing (label-aware)
+enable_quality_balance: true
+p_sharp_ai: 0.10
+p_blur_real: 0.10
+sharp_boost_generators:
+  - sdv5
+  - wukong
+
+# Upsampling for hard_cases_web (on-the-fly via sampler weights)
+# Set to the folder containing train/val inside hard_cases_web, or leave null to disable
+hard_cases_dir: "data/standardized_jpg/hard_cases_web"
+# Factor > 1.0 boosts sampling probability for hard_cases_web samples
+upsample_hard_cases_factor: 3.0
+
+# Training
+epochs: 12
+learning_rate: 0.00025
+weight_decay: 0.0005
+early_stopping_patience: 3
+seed: 42
+
+# Optimizer/precision (parity with regularized setup)
+use_adamw: true
+use_amp: true
+
+# Output
+save_dir: "models/augmented_training"

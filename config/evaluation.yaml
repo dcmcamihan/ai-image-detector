@@ -1,0 +1,21 @@
+# config/evaluation.yaml
+
+# --- Model settings ---
+model_name: resnet18           # or "vit_b_16"
+model_path: models/saved/best_model_epoch10_acc0.9215.pth  # update after training
+pretrained: false              # keep false when loading your own weights
+
+# --- Data settings ---
+image_size: 224
+batch_size: 32
+
+# --- Evaluation settings ---
+average: binary                # or 'macro' for >2 classes
+save_confusion_matrix: true
+save_raw_confusion_matrix: true
+cross_generator_eval: true     # run src/evaluation/cross_generator_eval.py
+num_workers: 4
+
+# --- Output paths ---
+results_dir: results/          # metrics CSVs and confusion matrices
+log_path: results/eval_log.txt

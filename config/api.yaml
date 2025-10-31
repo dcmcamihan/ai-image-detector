@@ -1,0 +1,20 @@
+# config/api.yaml
+
+# --- Model settings ---
+model_name: resnet18           # or "vit_b_16"
+model_path: models/saved/best_model_epoch10_acc0.9215.pth
+device: auto                   # 'cuda', 'mps', or 'cpu'
+
+# --- Inference settings ---
+image_size: 224
+confidence_threshold: 0.5      # minimum probability for positive class
+class_names: ["ai", "nature"]  # label mapping
+pretrained: false
+
+# --- Server settings ---
+host: 0.0.0.0
+port: 8000
+debug: true
+
+# --- Output settings ---
+log_dir: api/logs/

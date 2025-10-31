@@ -1,0 +1,12 @@
+# config/fine_tuning.yaml
+
+model_name: "resnet18"
+epochs: 3
+learning_rate: 1e-5
+batch_size: 32
+weight_decay: 1e-4
+image_size: 224
+save_dir: "models/fine_tuned_general"
+data_root: "data/standardized_jpg/general"
+early_stopping_patience: 2
+seed: 42

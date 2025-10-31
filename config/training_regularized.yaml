@@ -1,0 +1,54 @@
+model_name: "swin_tiny_patch4_window7_224"
+pretrained: true
+freeze_backbone: false
+
+# Strong regularization
+dropout: 0.4
+label_smoothing: 0.1
+
+# Optimizer & schedule
+use_adamw: true
+use_amp: true
+epochs: 40
+early_stopping_patience: 8
+learning_rate: 0.00008
+backbone_lr: 0.00003
+head_lr: 0.0003
+head_warmup_epochs: 1
+weight_decay: 0.001
+
+# Stability & averaging
+ema_decay: 0.999
+use_swa: true
+swa_start_epoch: 32
+swa_lr: 0.00002
+
+# Data
+data_root: "data/standardized_jpg"
+hard_cases_dir: "data/standardized_jpg/hard_cases_web"
+image_size: 224
+batch_size: 40
+use_class_weights: false
+augmented: true
+
+# Label-aware quality balancing (match Phase 1 behavior)
+enable_quality_balance: true
+p_sharp_ai: 0.10
+p_blur_real: 0.10
+sharp_boost_generators:
+  - sdv5
+  - wukong
+
+# Upsampling emphasis for hard_cases_web
+upsample_hard_cases_factor: 4.0
+# Optional late-phase boost (enabled if epoch >= this and factor provided)
+late_upsample_epoch: 30
+late_upsample_factor: 5.0
+
+# Output
+save_dir: "models/regularized_finetune"
+checkpoint_path: "models/regularized_training/model_swin_t_regularized.pth"
+resume_training: true
+
+# Optional: explicitly pin workers (code already defaults to 0 on MPS)
+num_workers: 0
