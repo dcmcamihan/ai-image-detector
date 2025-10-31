@@ -1,0 +1,23 @@
+# DEPRECATED: Use config/training.yaml instead.
+# This file exists for backward compatibility only.
+
+# --- Model settings ---
+model_name: resnet18        # or "vit_b_16"
+pretrained: true            # load ImageNet weights
+freeze_backbone: false      # set true to fine-tune only the head
+dropout: 0.2                # dropout before final classifier if supported
+
+# --- Data settings ---
+image_size: 224
+batch_size: 32
+
+# --- Training settings ---
+epochs: 10
+learning_rate: 0.0005
+weight_decay: 0.0001
+early_stopping_patience: 3  # 0 disables early stopping
+seed: 42
+
+# --- Output paths ---
+save_dir: models/saved
+
