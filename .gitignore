@@ -1,0 +1,9 @@
+# Heavy model artifacts
+models/
+*.pth
+*.pt
+*.onnx
+*.ckpt
+
+# Whitelist small training logs if present
+!models/**/training_log_*.json
