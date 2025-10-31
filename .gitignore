@@ -7,3 +7,11 @@ models/
 
 # Whitelist small training logs if present
 !models/**/training_log_*.json
+
+# allow only the deployed checkpoint (LFS)
+!models/regularized_training/model_swin_t_regularized.pth
+
+# allow only the deployed checkpoint (LFS) by re-including parents
+!models/
+!models/regularized_training/
+!models/regularized_training/model_swin_t_regularized.pth
